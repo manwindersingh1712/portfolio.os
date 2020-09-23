@@ -110,29 +110,41 @@ img {
     width: 100%;
   }
 
-
-  /* animation */
-
- .type{
-      animation: type 3s forwards;
-      overflow:hidden;
-      width: max-content;
-  }
-
-  @keyframes type{
-      0%{
-         width: max-content;
-         color:black;
-      }
-      100%{
-          width: 0;
-          color:red;
-      }
-  }
-
-
   @media(max-width:600px) {
     .card,.comming {
       display: block;
+    }
+  }
+
+  /* animation */
+  .myself{
+    display: flex;
+  }
+
+  .typing{
+    position:relative;
+    margin-left: 10px;
+    text-decoration: underline  rgb(37, 102, 146);
+  }
+
+  .typing::after{
+    content: '';
+    position: absolute;
+    width:4px;
+    background-color: rgb(37, 102, 146);
+    height: 90%;
+    right:-5px;
+    animation: blink 0.5s infinite ease-in-out;
+  }
+
+  @keyframes blink{
+    0%{
+      opacity: 0;
+    }
+    50%{
+      opacity: 1;
+    }
+    100%{
+      opacity: 0;
     }
   }
