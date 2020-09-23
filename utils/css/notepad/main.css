@@ -1,0 +1,50 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    /* overflow: hidden; */
+    height: 100vh;
+    background-color:white;
+}
+
+h5{
+    position: fixed;
+    top:2%;
+    width:max-content;
+    left:45%;
+}
+
+
+textarea{
+    border-width: 0;
+    resize:none;
+    position: fixed;
+    width:100%;
+    height: 90%;
+    top:6%;
+    letter-spacing: 2px;
+}
+
+textarea:focus{
+    outline-width: 0;
+}
+
+button{
+    position: fixed;
+    font-size:10px;
+    color:white;
+    background-color: black;
+    border-radius: 5px;
+    width:5%;
+    height: 3%;
+    bottom:0%;
+    right: 0%;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(54, 54, 54);
+}
