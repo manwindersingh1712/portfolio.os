@@ -116,35 +116,4 @@ img {
     }
   }
 
-  /* animation */
-  .myself{
-    display: flex;
-  }
-
-  .typing{
-    position:relative;
-    margin-left: 10px;
-    text-decoration: underline  rgb(37, 102, 146);
-  }
-
-  .typing::after{
-    content: '';
-    position: absolute;
-    width:4px;
-    background-color: rgb(37, 102, 146);
-    height: 90%;
-    right:-5px;
-    animation: blink 0.5s infinite ease-in-out;
-  }
-
-  @keyframes blink{
-    0%{
-      opacity: 0;
-    }
-    50%{
-      opacity: 1;
-    }
-    100%{
-      opacity: 0;
-    }
-  }
+  

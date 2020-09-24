@@ -1,0 +1,243 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    /* font-family: 'Balsamiq Sans', cursive; */
+    font-family: 'Fira Sans', sans-serif;
+
+}
+.container{
+    display: grid;
+    grid-template-columns:1fr 4fr;
+}
+
+
+.parallax{
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("../../../images/resume/me.JPG") no-repeat fixed ;
+    background-size: cover;
+}
+
+.parallax-inner{
+    padding-top:20%;
+    padding-bottom:40%;
+    padding-left:40%;
+}
+
+/* left side  */
+a{
+    text-decoration: none;
+    color:rgb(199, 196, 196);
+    transition: 500ms;
+
+}
+
+.left_navbar{
+    display: grid;
+    grid-gap: 30px;
+    /* border:1px solid red; */
+    width:50%;
+    margin-left:25%;
+    transition: 500ms;
+
+    
+}
+
+.left_navbar a:hover{
+color: rgb(20, 138, 192);
+transition: 500ms;
+}
+
+
+.left{
+    background-color: #010114;
+    color:white;
+    height: 100vh;
+    overflow:hidden;
+    position: sticky;
+    top:0;
+    left:0;
+    display: grid;
+    grid-template-rows: repeat(8,1fr);
+    /* grid-gap: 20px; */
+}
+
+.dp{
+    width:40%;
+    margin:10% 30% 0 30%;
+    border: 10px solid rgb(49, 47, 47);
+    border-radius:50%;
+}
+
+.left_dp{
+    height: max-content;
+}
+
+
+.left_name{
+    font-size:1rem;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.left_icons{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px;
+    margin:0 auto;
+    /* margin-top:-40px; */
+}
+
+.left_icons i{
+    color:white;
+    background-color: rgb(49, 47, 47);
+    height: max-content;
+    width: max-content;
+    border:10px solid rgb(49, 47, 47);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 500ms;
+    
+}
+
+.left_icons i:hover{
+    transition: 500ms;
+
+    background-color: rgb(20, 138, 192);
+    border:10px solid rgb(20, 138, 192);
+}
+
+
+.left_footer p.top{
+    display: flex;
+    justify-content: center;
+   font-size: 15px;
+}
+
+.left_footer p.bottom{
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+}
+.left_footer p.bottom a{
+    color: rgb(73, 97, 161);
+}
+
+/* animation */
+
+.my_name{
+    color:white;
+    font-size: 2.5rem;
+}
+
+.myself{
+    display: flex;
+    color: white;
+  }
+
+  .typing{
+    position:relative;
+    margin-left: 10px;
+    text-decoration: underline  rgb(19, 143, 226);
+  }
+
+  .typing::after{
+    content: '';
+    position: absolute;
+    width:4px;
+    background-color: rgb(19, 143, 226);
+    height: 90%;
+    right:-5px;
+    animation: blink 0.5s infinite ease-in-out;
+  }
+
+  @keyframes blink{
+    0%{
+      opacity: 0;
+    }
+    50%{
+      opacity: 1;
+    }
+    100%{
+      opacity: 0;
+    }
+  }
+/* right  */
+.right{
+    overflow-x: hidden;
+}
+
+  /* About */
+
+  .margin{
+      margin-bottom: 5%;
+  }
+
+  .about{
+    height:100vh;
+    margin-left:5%;
+    }
+
+  hr{
+      margin-top:17px;
+      width: 5%;
+      height: 5px;
+      background-color: royalblue;
+
+  }
+
+  .about h1{
+      color: #282874;
+      width: max-content;
+  }
+
+  .about p{
+      border:1px solid red;
+    width: max-content;
+  }
+
+  .about_grid{
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      margin-top:5%;
+  }
+
+  /* .about_grid_image{
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+  } */
+
+  .about_grid_image img{
+      margin-left: 10%;
+      margin-top: 10%;
+      width:62%;
+      border-radius: 10px;
+  }
+
+  .about_info div.head{
+        height: max-content;
+        color:#282874;
+        font-size: 1.7rem;
+  }
+
+  li{
+      list-style: none;
+      margin:20px 0;
+  }
+
+  li::before{
+    content: "\00BB    "; 
+    color:rgb(27, 109, 177);
+  }
+
+  .about_list{
+      margin-right: 5%;
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+  }
+
+  /* RESUME */
+  
