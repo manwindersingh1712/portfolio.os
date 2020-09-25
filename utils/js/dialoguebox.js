@@ -2,6 +2,7 @@ var close=document.getElementById("close");
 var chrome=document.getElementsByClassName("chrome");
 var notepad=document.getElementsByClassName("notepad");
 var project=document.getElementsByClassName("project");
+var resume=document.getElementsByClassName('resume');
 var expand=document.getElementById("expand");
 var shrink=document.getElementById("shrink");
 var minimise=document.getElementById("minimise");
@@ -12,6 +13,7 @@ let flag=true;
 const chromelink="https://searchencrypt.com/";
 const notepadlink="./frames/notepad.html";
 const projectlink="./frames/projects.html";
+const resumelink="./frames/resume.html";
 
 
 let presentlink,presenticon;
@@ -60,6 +62,51 @@ let presentlink,presenticon;
     
 // };
 // *************************************desktop icons*******************************************************
+resume[0].addEventListener('dblclick',function(){
+    flag=true;
+    document.getElementById("d-box").classList.remove('go_up')
+    document.getElementById("top").classList.remove('go_up')
+    document.getElementById("close").classList.remove('go_up')
+    document.getElementById("expand").classList.remove('go_up')
+    document.getElementById("shrink").classList.remove('go_up')
+    document.getElementById("minimise").classList.remove('go_up')
+    document.getElementById("iframe").classList.remove('go_up')
+
+
+    document.getElementById("d-box").classList.remove('go_down')
+    document.getElementById("top").classList.remove('go_down')
+    document.getElementById("close").classList.remove('go_down')
+    document.getElementById("expand").classList.remove('go_down')
+    document.getElementById("shrink").classList.remove('go_down')
+    document.getElementById("minimise").classList.remove('go_down')
+    document.getElementById("iframe").classList.remove('go_down')
+
+
+    document.getElementById("d-box").classList.remove('active-large')
+    document.getElementById("top").classList.remove('active-large')
+    document.getElementById("iframe").classList.remove('active-large')
+
+    document.getElementById("d-box").classList.add('active-small');
+    document.getElementById("top").classList.add('active-small');
+    document.getElementById("iframe").classList.add('active-small');
+    
+    document.getElementById("icon_start").style.backgroundColor="rgba(97, 87, 87, 0.637)";
+    tasskbarcolor=true;
+    
+    
+    document.getElementById("icon_start").style.visibility="visible";
+    document.getElementById("expand").style.visibility="visible";
+    document.getElementById("shrink").style.visibility="hidden";
+    
+    document.getElementById("icon_start").style.borderBottom="4px solid rgb(196, 74, 74)";
+    
+    document.getElementById("iframe").src="./frames/resume.html";
+    document.getElementById("give_icon").src="https://img.icons8.com/fluent/22/000000/open-resume.png";
+
+    presenticon="https://img.icons8.com/fluent/22/000000/open-resume.png";
+    presentlink=resumelink;
+
+})
 
 project[0].addEventListener('dblclick',function(){
     flag=true;

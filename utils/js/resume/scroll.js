@@ -46,11 +46,3 @@ document.getElementsByClassName('scroll_top')[0].addEventListener('click',functi
         behavior:"smooth"
     });
 })
-
-// document.getElementsByClassName('left_home')[0].addEventListener('click',function(){
-//     window.scrollTo({
-//         top:0,
-//         left:0,
-//         behavior:"smooth"
-//     });
-// })
