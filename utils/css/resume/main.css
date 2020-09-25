@@ -179,11 +179,11 @@ transition: 500ms;
   /* About */
 
   .about{
-    height:100vh;
+    height:max-content;
     padding-top: 5%;
     margin-left:5%;
     padding-right: 5%;
-
+    padding-bottom: 10%;
     }
 
   hr{
@@ -248,7 +248,8 @@ transition: 500ms;
   /* Skills */
 
 .skills{
-    height: 100vh;
+    height: max-content;
+    padding-bottom: 10%;
     padding-top: 5%;
     padding-left: 5%;
     padding-right: 5%;
@@ -330,7 +331,8 @@ transition: 500ms;
 /* resume */
 
 .resume{
-    height:100vh;
+    height:max-content;
+    padding-bottom: 10%;
     padding-top:5%;
     padding-left:5%;
     padding-right:5%;
@@ -360,7 +362,8 @@ transition: 500ms;
 /* contact */
 
 .contact{
-    height: 100vh;
+    height: max-content;
+    padding-bottom: 10%;
     background-color: rgb(242, 242, 247);
     padding-top: 5%;
     padding-left: 5%;
