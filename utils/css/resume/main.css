@@ -42,6 +42,11 @@ a{
     
 }
 
+.left_navbar a.active{
+    color: rgb(20, 138, 192);
+transition: 500ms;
+}
+
 .left_navbar a:hover{
 color: rgb(20, 138, 192);
 transition: 500ms;
@@ -349,5 +354,75 @@ transition: 500ms;
 .resume_link:hover {
     background-color: rgba(0, 0, 0, 0.836);
     color:rgb(19, 143, 226);
+    cursor: pointer;
 } 
+
+/* contact */
+
+.contact{
+    height: 100vh;
+    background-color: rgb(242, 242, 247);
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.contact_intro{
+    padding-top: 30px;
+}
+
+.contact_grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
+    padding-top:8%;
+
+}
+
+.contact_info{
+    display:grid;
+    grid-gap:30px;
+}
+
+.location i,.email i,.phone i{
+    color: rgb(19, 143, 226);
+    border: 10px solid rgb(227, 230, 233);
+    border-radius: 100%;
+    background-color:rgb(227, 230, 233);
+    width:max-content;
+    height: max-content;
+}
+
+.location,.email,.phone{
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    
+}
+
+/* scroll  */
+
+.scroll_top{
+    position: fixed;
+    font-size: 0;
+}
+
+.scroll_top:hover{
+    cursor: pointer;
+}
+
+.scroll_top_active{
+    position:fixed;
+    bottom: 5px;
+    right: 5px;
+    z-index: 100;
+    font-size: 1.5rem;
+    color: rgb(227, 230, 233);
+    border: 10px solid rgb(19, 143, 226);
+    border-radius: 100%;
+    background-color: rgb(19, 143, 226);
+    width:max-content;
+    height: max-content;
+    padding-left:5px;
+    padding-right: 5px;
+}
 
