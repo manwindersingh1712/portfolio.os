@@ -13,14 +13,16 @@
         </div>
         
         <div>
-            <textarea name="notes" id="textarea" cols="30" rows="10" placeholder="Enter your notes here..............."></textarea>
+            <textarea id="note" name="notes" id="textarea" cols="30" rows="10" placeholder="Enter your notes here..............."></textarea>
         </div>
 
         <div>
-            <button> SAVE</button>
+            <button class="save" onclick="copy()"> SAVE</button>
+            <button onclick="new_note()" class="new"> New</button>
         </div>
 
     </div>
     
+<script type="text/javascript" src="../utils/js/notepad/save.js"></script>
 </body>
 </html>

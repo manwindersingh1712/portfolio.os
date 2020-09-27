@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.settings{
+    color: white;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+
+.head{
+    padding-top:6%;
+    display: flex;
+    justify-content: center;
+}
+
+.icons{
+    padding-top:10%;
+    padding-bottom: 2%;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 20px;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    /* border: 1px solid red; */
+}
+
+.icons i{
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    color:rgb(110, 139, 226);
+}
+.icon_grid{
+    position: relative;
+    /* border: 1px solid blue; */
+    padding:20px;
+    width: max-content;
+    margin:auto;
+    border:0.5px solid black;
+    cursor: pointer;
+
+}
+
+.icon_grid:hover{
+    border:0.5px solid rgb(204, 201, 201);
+    background-color: rgba(102, 98, 98, 0.274);
+}
+
+.caption{
+    display: flex;
+    justify-content: center;
+    color:white;
+}
+
+/* popup */
+
+.db{
+    overflow: hidden;
+}
+
+.popup{
+    margin-top:1%;
+    border: 0.5px solid rgb(204, 201, 201);
+    animation:down 1.5s forwards;
+}
+
+.popdown{
+    margin-top:1%;
+    /* border: 0.5px solid rgb(204, 201, 201); */
+    animation:up 1.5s forwards;
+}
+
+@keyframes up{
+    from{
+        height: 30%;
+        border:0.5px solid rgb(204, 201, 201);
+        padding:20px;
+    }
+    to{
+        height: 0;
+        border:0 solid rgb(204, 201, 201);
+        padding:0;
+    }
+}
+
+@keyframes down{
+    from{
+        height: 0;
+        padding-top:0;
+    }
+    to{
+        height:30%;
+        padding:20px;
+    }
+}
+
+/* WALLPAPER  */
+
+.w{
+    display: none;
+}
+
+.wallpaper_active{
+    display: block;
+}
+
+.wall_flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    width:70%;
+    margin-left: 15%;
+    margin-top: 2%;
+}
+
+.wall_head{
+    font-size:1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.walls{
+    margin-left:8%;
+    margin-right: 8%;
+}
+
+.walls img{
+    width:100px;
+    height: 80px;
+    border:5px solid rgb(204, 201, 201);
+    cursor: pointer;
+}
+
+.walls img:hover{
+    border:5px solid rgb(91, 121, 211);
+}
