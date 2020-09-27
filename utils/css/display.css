@@ -147,7 +147,7 @@ div#top.active-small i#minimise:hover{
 
 iframe.active-small{
     position: fixed;
-    top:0;
+    top:5px;
     left:0;
     width:50.03%;
     height: 56.8%;
@@ -235,7 +235,7 @@ div#top.active-large i#minimise:hover{
 iframe.active-large{
     position: fixed;
     margin-top:20px;
-    top:0;
+    top:5px;
     left:0;
     width:100%;
     height: 93%;
