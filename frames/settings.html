@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../utils/css/settings/main.css">
     <script src="https://kit.fontawesome.com/f215c44bdc.js" crossorigin="anonymous"></script>
 
-    <title>Document</title>
+    <title>Settings</title>
 </head>
 <body>
     <div class="settings">
@@ -27,30 +27,30 @@
 
             <!-- font_size -->
 
-            <div class="icon_grid">
-                <i class="fas fa-text-height font_size"></i>
+            <div class="icon_grid font_size">
+                <i class="fas fa-text-height "></i>
                 <div class="caption">Text Size</div>
             </div>
 
             <!-- translator -->
 
-            <div class="icon_grid">
-                <i class="fas fa-language translator"></i>
+            <div class="icon_grid translator">
+                <i class="fas fa-language "></i>
                 <div class="caption">Translator</div>
             </div>
 
             <!-- reset -->
 
-            <div class="icon_grid">
-                <i class="fas fa-sync-alt reset"></i>
+            <div class="icon_grid reset">
+                <i class="fas fa-sync-alt "></i>
                 <div class="caption">Reset</div>
             </div>
             
         </div>
 
         <div class="db ">
-            <!-- wallpaper -->
-            <div class="w wallpaper_active">
+            <!-- wallpaper  -->
+            <div class="w ">
                 <div class="wall_head">Wallpaper</div>
                 <div class="wall_flex">
                     <div class="walls">
@@ -67,13 +67,40 @@
             </div>
 
             <!-- font -->
-            <!-- <div class="f font_family_active">
-                    
-            </div> -->
+            <div class="f">
+                <div class="f_head">Fonts</div>
+               <div class="f_flex">
+                   <div> Times New s</div>                    
+                   <div> Arial </div>                    
+                   <div>Courier New</div>                    
+                </div>
+            </div>
 
+            <!-- text-size  -->
+            <div class="t" style="color: white;">
+                <div class="t_head">Text Size</div>
+                <div class="t_flex">
+                    <div> T &#8593;	 </div>                    
+                    <div> T   </div>                    
+                    <div>T &#8595;	</div>                    
+                 </div>
+            </div>
+
+            <!-- translator -->
+            <div class="trans">
+                <div class="t_head">Translator</div>
+                <div id="google"></div>
+            </div>
         </div>
 
     </div>
+
+<script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: 'en'}, 'google');
+        }
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 <script type="text/javascript" src="../utils/js/settings/popup.js"></script>
 </body>

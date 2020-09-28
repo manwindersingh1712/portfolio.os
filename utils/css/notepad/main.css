@@ -31,10 +31,13 @@ textarea{
 textarea:focus{
     outline-width: 0;
 }
+button{
+    padding-bottom: 10px;
+}
 
 button.save{
     position: fixed;
-    font-size:10px;
+    font-size:60%;
     color:white;
     background-color: black;
     border-radius: 5px;
@@ -51,7 +54,7 @@ button.save:hover{
 
 button.new{
     position: fixed;
-    font-size:10px;
+    font-size:60%;
     color:white;
     background-color: black;
     border-radius: 5px;

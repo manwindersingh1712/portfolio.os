@@ -19,7 +19,7 @@
 }
 
 .icons{
-    padding-top:10%;
+    padding-top:5%;
     padding-bottom: 2%;
     display: grid;
     grid-template-columns: repeat(5,1fr);
@@ -31,7 +31,7 @@
 }
 
 .icons i{
-    font-size: 4rem;
+    font-size: 260%;
     display: flex;
     justify-content: center;
     color:rgb(110, 139, 226);
@@ -76,9 +76,13 @@
     animation:up 1.5s forwards;
 }
 
+.zero{
+    display: none;
+}
+
 @keyframes up{
     from{
-        height: 30%;
+        height: 20%;
         border:0.5px solid rgb(204, 201, 201);
         padding:20px;
     }
@@ -132,12 +136,109 @@
 }
 
 .walls img{
-    width:100px;
-    height: 80px;
-    border:5px solid rgb(204, 201, 201);
+    width:35%;
+    /* height: 80px; */
+    border:2px solid rgb(204, 201, 201);
     cursor: pointer;
 }
 
 .walls img:hover{
-    border:5px solid rgb(91, 121, 211);
+    border:2px solid rgb(91, 121, 211);
+}
+
+#wall3{
+    width: 90%;
+}
+
+/* font */
+.f{
+    display: none;
+}
+
+.font_family_active{
+   display: block;
+}
+
+.f_head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.f_flex{
+    margin-top:2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.f_flex div{
+    margin:0 30px;
+    border:2px solid rgb(204, 201, 201);
+    padding:0.5% 1.2%;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+
+.f_flex div:hover{
+    color:black;
+    background-color: rgb(110, 139, 226);
+}
+
+/* text-size */
+
+.t{
+    display: none;
+}
+
+.font-size_active{
+   display: block;
+}
+
+.t_head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.t_flex{
+    margin-top:2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.t_flex div{
+    margin:0 30px;
+    border:2px solid rgb(204, 201, 201);
+    padding:0.5% 1.2%;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+
+.t_flex div:hover{
+    color:black;
+    background-color: rgb(110, 139, 226);
+}
+
+/* translator */
+
+.trans{
+    display: none;
+}
+
+.t_active{
+    display: block;
+}
+
+#google{
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    margin-top:2%;
 }
