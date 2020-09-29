@@ -49,16 +49,54 @@
     }
 }
 
+/* end bar  */
+.end_bar{
+    overflow-y: scroll;
+    display: grid;
+    grid-gap: 10px;
+}
+
 .end_bar i{
+    width:100%;
     color: white;
     border:1px solid rgb(141, 54, 54);
     background-color: rgb(141, 54, 54);
     font-size: 300%;
-    padding:8%;
-    margin:10px 4%;
+    padding:20px;
 }
 
+.social_bar{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+
+.bar_head{
+    display: flex;
+    align-items: center;
+    background-color: rgba(63, 59, 59, 0.493);
+    padding:5px 0;
+}
+
+.about_me{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(3,1fr);
+    
+}
+
+.quick_access{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+
+}
+
+
 /* side bar  */
+
 .side_bar{
     position: sticky;
     top:20%;
@@ -89,6 +127,7 @@
 }
 
 a{
+    text-decoration: none;
     color: white;
 }
 
@@ -97,11 +136,12 @@ a{
 .middle_bar{
     overflow-y: auto;
     display: grid;
-    grid-gap: 5px;
+    grid-gap: 10px;
 }
 
 .middle_bar i{
     font-size: 100%;
+    width:17%;
     margin-right: 10px;
     padding:10px;
     background-color: rgb(138, 52, 52);
@@ -117,6 +157,9 @@ a{
 .middle_bar div:hover{
     background-color: rgba(97, 87, 87, 0.637);
 }
+
+
+
 
 
 
@@ -142,6 +185,25 @@ a{
     background: #555;
   }
 
+  /* //////////// */
+  .end_bar::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  .end_bar::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  .end_bar::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  .end_bar::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
 
 
 

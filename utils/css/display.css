@@ -2,6 +2,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
 }
 
 #background{
@@ -29,7 +30,7 @@
 
 .start{
     /* position:fixed; */
-    font-size:15px;
+    font-size:14px;
     padding:.40%;
     padding-left:.52%;
     padding-right:.52%;

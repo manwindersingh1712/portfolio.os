@@ -24,50 +24,13 @@ let presentlink,presenticon;
 
 // ***********************Usable Functions**************************************
 
-// var openbox= function() {
-//     document.getElementById("d-box").classList.remove('go_up')
-//     document.getElementById("top").classList.remove('go_up')
-//     document.getElementById("close").classList.remove('go_up')
-//     document.getElementById("expand").classList.remove('go_up')
-//     document.getElementById("shrink").classList.remove('go_up')
-//     document.getElementById("minimise").classList.remove('go_up')
-//     document.getElementById("iframe").classList.remove('go_up')
+var openbox= function() {
 
-
-//     document.getElementById("d-box").classList.remove('go_down')
-//     document.getElementById("top").classList.remove('go_down')
-//     document.getElementById("close").classList.remove('go_down')
-//     document.getElementById("expand").classList.remove('go_down')
-//     document.getElementById("shrink").classList.remove('go_down')
-//     document.getElementById("minimise").classList.remove('go_down')
-//     document.getElementById("iframe").classList.remove('go_down')
-
-
-//     document.getElementById("d-box").classList.remove('active-large')
-//     document.getElementById("top").classList.remove('active-large')
-//     document.getElementById("iframe").classList.remove('active-large')
-
-//     document.getElementById("d-box").classList.add('active-small');
-//     document.getElementById("top").classList.add('active-small');
-//     document.getElementById("iframe").classList.add('active-small');
+    document.getElementsByClassName('sm')[0].classList.remove("start_menu");
+    if(document.getElementsByClassName('d')[0]!=null){
+        document.getElementsByClassName('sm')[0].classList.remove("d");
+    }
     
-//     document.getElementById("icon_start").style.backgroundColor="rgba(97, 87, 87, 0.637)";
-    
-//     document.getElementById("iframe").src=chromelink;
-    
-//     document.getElementById("icon_start").style.visibility="visible";
-//     document.getElementById("expand").style.visibility="visible";
-//     document.getElementById("shrink").style.visibility="hidden";
-
-//     document.getElementById("icon_start").style.borderBottom="4px solid rgb(196, 74, 74)";
-
-
-//     presentlink=chromelink;
-    
-// };
-// *************************************desktop icons*******************************************************
-
-settings[0].addEventListener('dblclick',function(){
     flag=true;
     document.getElementById("d-box").classList.remove('go_up')
     document.getElementById("top").classList.remove('go_up')
@@ -104,7 +67,14 @@ settings[0].addEventListener('dblclick',function(){
     document.getElementById("shrink").style.visibility="hidden";
     
     document.getElementById("icon_start").style.borderBottom="4px solid rgb(196, 74, 74)";
+
     
+
+};
+// *************************************desktop icons*******************************************************
+
+settings[0].addEventListener('dblclick',function(){
+    openbox();
     document.getElementById("iframe").src="./frames/settings.html";
     document.getElementById("give_icon").src="https://img.icons8.com/fluent/22/000000/settings.png";
 
@@ -114,42 +84,7 @@ settings[0].addEventListener('dblclick',function(){
 })
 
 face_recognition[0].addEventListener('dblclick',function(){
-    flag=true;
-    document.getElementById("d-box").classList.remove('go_up')
-    document.getElementById("top").classList.remove('go_up')
-    document.getElementById("close").classList.remove('go_up')
-    document.getElementById("expand").classList.remove('go_up')
-    document.getElementById("shrink").classList.remove('go_up')
-    document.getElementById("minimise").classList.remove('go_up')
-    document.getElementById("iframe").classList.remove('go_up')
-
-
-    document.getElementById("d-box").classList.remove('go_down')
-    document.getElementById("top").classList.remove('go_down')
-    document.getElementById("close").classList.remove('go_down')
-    document.getElementById("expand").classList.remove('go_down')
-    document.getElementById("shrink").classList.remove('go_down')
-    document.getElementById("minimise").classList.remove('go_down')
-    document.getElementById("iframe").classList.remove('go_down')
-
-
-    document.getElementById("d-box").classList.remove('active-large')
-    document.getElementById("top").classList.remove('active-large')
-    document.getElementById("iframe").classList.remove('active-large')
-
-    document.getElementById("d-box").classList.add('active-small');
-    document.getElementById("top").classList.add('active-small');
-    document.getElementById("iframe").classList.add('active-small');
-    
-    document.getElementById("icon_start").style.backgroundColor="rgba(97, 87, 87, 0.637)";
-    tasskbarcolor=true;
-    
-    
-    document.getElementById("icon_start").style.visibility="visible";
-    document.getElementById("expand").style.visibility="visible";
-    document.getElementById("shrink").style.visibility="hidden";
-    
-    document.getElementById("icon_start").style.borderBottom="4px solid rgb(196, 74, 74)";
+   openbox();
     
     document.getElementById("iframe").src="./frames/face.html";
     document.getElementById("give_icon").src="https://img.icons8.com/plasticine/22/000000/face-id.png";
@@ -160,43 +95,7 @@ face_recognition[0].addEventListener('dblclick',function(){
 })
 
 resume[0].addEventListener('dblclick',function(){
-    flag=true;
-    document.getElementById("d-box").classList.remove('go_up')
-    document.getElementById("top").classList.remove('go_up')
-    document.getElementById("close").classList.remove('go_up')
-    document.getElementById("expand").classList.remove('go_up')
-    document.getElementById("shrink").classList.remove('go_up')
-    document.getElementById("minimise").classList.remove('go_up')
-    document.getElementById("iframe").classList.remove('go_up')
-
-
-    document.getElementById("d-box").classList.remove('go_down')
-    document.getElementById("top").classList.remove('go_down')
-    document.getElementById("close").classList.remove('go_down')
-    document.getElementById("expand").classList.remove('go_down')
-    document.getElementById("shrink").classList.remove('go_down')
-    document.getElementById("minimise").classList.remove('go_down')
-    document.getElementById("iframe").classList.remove('go_down')
-
-
-    document.getElementById("d-box").classList.remove('active-large')
-    document.getElementById("top").classList.remove('active-large')
-    document.getElementById("iframe").classList.remove('active-large')
-
-    document.getElementById("d-box").classList.add('active-small');
-    document.getElementById("top").classList.add('active-small');
-    document.getElementById("iframe").classList.add('active-small');
-    
-    document.getElementById("icon_start").style.backgroundColor="rgba(97, 87, 87, 0.637)";
-    tasskbarcolor=true;
-    
-    
-    document.getElementById("icon_start").style.visibility="visible";
-    document.getElementById("expand").style.visibility="visible";
-    document.getElementById("shrink").style.visibility="hidden";
-    
-    document.getElementById("icon_start").style.borderBottom="4px solid rgb(196, 74, 74)";
-    
+    openbox();
     document.getElementById("iframe").src="./frames/resume.html";
     document.getElementById("give_icon").src="https://img.icons8.com/fluent/22/000000/open-resume.png";
 
@@ -206,88 +105,18 @@ resume[0].addEventListener('dblclick',function(){
 })
 
 project[0].addEventListener('dblclick',function(){
-    flag=true;
-    document.getElementById("d-box").classList.remove('go_up')
-    document.getElementById("top").classList.remove('go_up')
-    document.getElementById("close").classList.remove('go_up')
-    document.getElementById("expand").classList.remove('go_up')
-    document.getElementById("shrink").classList.remove('go_up')
-    document.getElementById("minimise").classList.remove('go_up')
-    document.getElementById("iframe").classList.remove('go_up')
-
-
-    document.getElementById("d-box").classList.remove('go_down')
-    document.getElementById("top").classList.remove('go_down')
-    document.getElementById("close").classList.remove('go_down')
-    document.getElementById("expand").classList.remove('go_down')
-    document.getElementById("shrink").classList.remove('go_down')
-    document.getElementById("minimise").classList.remove('go_down')
-    document.getElementById("iframe").classList.remove('go_down')
-
-
-    document.getElementById("d-box").classList.remove('active-large')
-    document.getElementById("top").classList.remove('active-large')
-    document.getElementById("iframe").classList.remove('active-large')
-
-    document.getElementById("d-box").classList.add('active-small');
-    document.getElementById("top").classList.add('active-small');
-    document.getElementById("iframe").classList.add('active-small');
     
-    document.getElementById("icon_start").style.backgroundColor="rgba(97, 87, 87, 0.637)";
-    tasskbarcolor=true;
-    
-    
-    document.getElementById("icon_start").style.visibility="visible";
-    document.getElementById("expand").style.visibility="visible";
-    document.getElementById("shrink").style.visibility="hidden";
-    
-    document.getElementById("icon_start").style.borderBottom="4px solid rgb(196, 74, 74)";
-    
+    openbox();
     document.getElementById("iframe").src="./frames/projects.html";
     document.getElementById("give_icon").src="https://img.icons8.com/fluent/22/000000/group-of-projects.png";
 
     presenticon="https://img.icons8.com/fluent/22/000000/group-of-projects.png";
-    presentlink=notepadlink;
+    presentlink=projectlink;
 
 })
 
 notepad[0].addEventListener('dblclick',function(){
-    flag=true;
-    document.getElementById("d-box").classList.remove('go_up')
-    document.getElementById("top").classList.remove('go_up')
-    document.getElementById("close").classList.remove('go_up')
-    document.getElementById("expand").classList.remove('go_up')
-    document.getElementById("shrink").classList.remove('go_up')
-    document.getElementById("minimise").classList.remove('go_up')
-    document.getElementById("iframe").classList.remove('go_up')
-
-
-    document.getElementById("d-box").classList.remove('go_down')
-    document.getElementById("top").classList.remove('go_down')
-    document.getElementById("close").classList.remove('go_down')
-    document.getElementById("expand").classList.remove('go_down')
-    document.getElementById("shrink").classList.remove('go_down')
-    document.getElementById("minimise").classList.remove('go_down')
-    document.getElementById("iframe").classList.remove('go_down')
-
-
-    document.getElementById("d-box").classList.remove('active-large')
-    document.getElementById("top").classList.remove('active-large')
-    document.getElementById("iframe").classList.remove('active-large')
-
-    document.getElementById("d-box").classList.add('active-small');
-    document.getElementById("top").classList.add('active-small');
-    document.getElementById("iframe").classList.add('active-small');
-    
-    document.getElementById("icon_start").style.backgroundColor="rgba(97, 87, 87, 0.637)";
-    tasskbarcolor=true;
-    
-    
-    document.getElementById("icon_start").style.visibility="visible";
-    document.getElementById("expand").style.visibility="visible";
-    document.getElementById("shrink").style.visibility="hidden";
-    
-    document.getElementById("icon_start").style.borderBottom="4px solid rgb(196, 74, 74)";
+    openbox();
     
     document.getElementById("iframe").src="./frames/notepad.html";
     document.getElementById("give_icon").src="https://img.icons8.com/cute-clipart/22/000000/copybook.png";
@@ -298,42 +127,7 @@ notepad[0].addEventListener('dblclick',function(){
 
 
 chrome[0].addEventListener('dblclick',function(){
-    flag=true;
-    document.getElementById("d-box").classList.remove('go_up')
-    document.getElementById("top").classList.remove('go_up')
-    document.getElementById("close").classList.remove('go_up')
-    document.getElementById("expand").classList.remove('go_up')
-    document.getElementById("shrink").classList.remove('go_up')
-    document.getElementById("minimise").classList.remove('go_up')
-    document.getElementById("iframe").classList.remove('go_up')
-
-
-    document.getElementById("d-box").classList.remove('go_down')
-    document.getElementById("top").classList.remove('go_down')
-    document.getElementById("close").classList.remove('go_down')
-    document.getElementById("expand").classList.remove('go_down')
-    document.getElementById("shrink").classList.remove('go_down')
-    document.getElementById("minimise").classList.remove('go_down')
-    document.getElementById("iframe").classList.remove('go_down')
-
-
-    document.getElementById("d-box").classList.remove('active-large')
-    document.getElementById("top").classList.remove('active-large')
-    document.getElementById("iframe").classList.remove('active-large')
-
-    document.getElementById("d-box").classList.add('active-small');
-    document.getElementById("top").classList.add('active-small');
-    document.getElementById("iframe").classList.add('active-small');
-    
-    document.getElementById("icon_start").style.backgroundColor="rgba(97, 87, 87, 0.637)";
-    tasskbarcolor=true;
-    
-    
-    document.getElementById("icon_start").style.visibility="visible";
-    document.getElementById("expand").style.visibility="visible";
-    document.getElementById("shrink").style.visibility="hidden";
-    
-    document.getElementById("icon_start").style.borderBottom="4px solid rgb(196, 74, 74)";
+   openbox();
     
     document.getElementById("iframe").src=chromelink;
     document.getElementById("give_icon").src="https://img.icons8.com/doodle/22/000000/chrome.png";
@@ -341,6 +135,92 @@ chrome[0].addEventListener('dblclick',function(){
     presenticon="https://img.icons8.com/doodle/22/000000/chrome.png";
     presentlink=chromelink;
 })
+
+// *********************************Start Menu***********************************************
+document.getElementById("menu_chrome").addEventListener('click',function(){
+        
+    openbox(); 
+    document.getElementById("iframe").src=chromelink;
+    document.getElementById("give_icon").src="https://img.icons8.com/doodle/22/000000/chrome.png";
+ 
+    presenticon="https://img.icons8.com/doodle/22/000000/chrome.png";
+    presentlink=chromelink;
+ })
+
+ document.getElementById("menu_face").addEventListener('click',function(){
+    openbox();
+     
+     document.getElementById("iframe").src="./frames/face.html";
+     document.getElementById("give_icon").src="https://img.icons8.com/plasticine/22/000000/face-id.png";
+ 
+     presenticon="https://img.icons8.com/plasticine/22/000000/face-id.png";
+     presentlink=facelink;
+ 
+ })
+
+ document.getElementById("menu_project").addEventListener('click',function(){
+    openbox();
+    
+    document.getElementById("iframe").src="./frames/projects.html";
+    document.getElementById("give_icon").src="https://img.icons8.com/fluent/22/000000/group-of-projects.png";
+
+    presenticon="https://img.icons8.com/fluent/22/000000/group-of-projects.png";
+    presentlink=projectlink;
+
+})
+
+document.getElementById("menu_notepad").addEventListener('click',function(){
+    openbox();
+    document.getElementById("iframe").src="./frames/notepad.html";
+    document.getElementById("give_icon").src="https://img.icons8.com/cute-clipart/22/000000/copybook.png";
+
+    presenticon="https://img.icons8.com/cute-clipart/22/000000/copybook.png";
+    presentlink=notepadlink;
+})
+
+document.getElementById("menu_resume").addEventListener('click',function(){
+    openbox();
+    document.getElementById("iframe").src="./frames/resume.html";
+    document.getElementById("give_icon").src="https://img.icons8.com/fluent/22/000000/open-resume.png";
+
+    presenticon="https://img.icons8.com/fluent/22/000000/open-resume.png";
+    presentlink=resumelink;
+
+})
+
+document.getElementById("menu_settings").addEventListener('click',function(){
+    openbox();
+    document.getElementById("iframe").src="./frames/settings.html";
+    document.getElementById("give_icon").src="https://img.icons8.com/fluent/22/000000/settings.png";
+
+    presenticon="https://img.icons8.com/fluent/22/000000/settings.png";
+    presentlink=settingslink;
+
+})
+
+document.getElementById("menu_game").addEventListener('click',function(){
+    openbox();
+    document.getElementById("iframe").src="https://manwindersingh1712.github.io/RGB-Game/";
+    document.getElementById("give_icon").src="https://img.icons8.com/nolan/22/controller.png";
+
+    presenticon="https://img.icons8.com/nolan/22/controller.png";
+    presentlink="https://manwindersingh1712.github.io/RGB-Game/";
+
+})
+
+document.getElementById("menu_todo").addEventListener('click',function(){
+    openbox();
+    document.getElementById("iframe").src="https://manwindersingh1712.github.io/TO-DO/";
+    document.getElementById("give_icon").src="https://img.icons8.com/fluent/22/000000/todo-list.png";
+
+    presenticon="https://img.icons8.com/fluent/22/000000/todo-list.png";
+    presentlink="https://manwindersingh1712.github.io/TO-DO/";
+
+})
+
+
+
+
 
 // *********************************controlling the dialogue box***********************************************
 close.addEventListener('click',function(){
@@ -557,13 +437,14 @@ icon_start.addEventListener('click',function(){
 
 document.getElementsByClassName("start")[0].addEventListener('click',function(){
     
-    
     if(document.getElementsByClassName("start_menu")[0]==null){
         document.getElementsByClassName('sm')[0].classList.add("start_menu");
         document.getElementsByClassName('sm')[0].classList.remove("d");
+        // document.getElementsByClassName("start")[0].style.backgroundColor="rgba(97, 87, 87, 0.637)";
     }else{
         document.getElementsByClassName('sm')[0].classList.remove("start_menu");
-        document.getElementsByClassName('sm')[0].classList.add("d");      
+        document.getElementsByClassName('sm')[0].classList.add("d");
+        // document.getElementsByClassName("start")[0].style.backgroundColor="rgb(36, 33, 33)";
     }
-    
+      
 })
