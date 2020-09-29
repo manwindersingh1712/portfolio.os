@@ -35,10 +35,12 @@
     padding-right:.52%;
     height:max-content;
     color:white;
+    transition: 0.2s;
 
 }
 
 .start:hover{
+    transition: 0.2s;
     background-color: rgba(97, 87, 87, 0.637);
     color:rgb(196, 74, 74);
 }
@@ -435,3 +437,5 @@ iframe.go_up{
         margin-top:8%;
     }
 }
+
+

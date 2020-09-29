@@ -551,3 +551,19 @@ icon_start.addEventListener('click',function(){
     // document.getElementById("iframe").classList.add('active-small')s
 
 })
+
+
+// *************************************start menu *********************************
+
+document.getElementsByClassName("start")[0].addEventListener('click',function(){
+    
+    
+    if(document.getElementsByClassName("start_menu")[0]==null){
+        document.getElementsByClassName('sm')[0].classList.add("start_menu");
+        document.getElementsByClassName('sm')[0].classList.remove("d");
+    }else{
+        document.getElementsByClassName('sm')[0].classList.remove("start_menu");
+        document.getElementsByClassName('sm')[0].classList.add("d");      
+    }
+    
+})

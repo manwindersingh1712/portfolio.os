@@ -1,0 +1,160 @@
+.sm{
+    display: none;
+}
+
+.d{
+    position: fixed;
+    z-index:4;
+    width: 43%;
+    height: 76%;
+    background-color: rgb(36, 33, 33);
+    color: white;
+    display: grid;
+    grid-template-columns: 1.3fr 6fr 10fr;
+    /* animation: up 1s forwards; */
+    animation: d 1s forwards;
+
+}
+
+
+@keyframes d{
+    from{
+        top:20%;
+    }
+    to{
+        top:110%;
+
+    }
+}
+
+.start_menu{
+    position: fixed;
+    z-index:4;
+    width: 43%;
+    height: 76%;
+    background-color: rgb(36, 33, 33);
+    color: white;
+    display: grid;
+    grid-template-columns: 1.3fr 6fr 10fr;
+    animation: up 1s forwards;
+}
+
+@keyframes up{
+    from{
+        top:110%;
+    }
+    to{
+        top:20%;
+
+    }
+}
+
+.end_bar i{
+    color: white;
+    border:1px solid rgb(141, 54, 54);
+    background-color: rgb(141, 54, 54);
+    font-size: 300%;
+    padding:8%;
+    margin:10px 4%;
+}
+
+/* side bar  */
+.side_bar{
+    position: sticky;
+    top:20%;
+    display:grid;
+    grid-template-rows:8fr 1fr 1fr 1fr 1fr 1fr;
+    /* border:2px solid red; */
+}
+
+.side_bar div.hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+    cursor: pointer;
+
+}
+
+.side_bar div.hover:hover{
+    transition: 0.2s;
+    background-color: rgba(97, 87, 87, 0.637);
+}
+
+.side_bar img{
+    width:50%;
+    height: 26px;
+    border-radius: 50%;
+    
+}
+
+a{
+    color: white;
+}
+
+/* middle bar  */
+
+.middle_bar{
+    overflow-y: auto;
+    display: grid;
+    grid-gap: 5px;
+}
+
+.middle_bar i{
+    font-size: 100%;
+    margin-right: 10px;
+    padding:10px;
+    background-color: rgb(138, 52, 52);
+}
+
+.middle_bar div{
+    height: max-content;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.middle_bar div:hover{
+    background-color: rgba(97, 87, 87, 0.637);
+}
+
+
+
+/* scrollbar  */
+
+
+.middle_bar::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  .middle_bar::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  .middle_bar::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  .middle_bar::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+
+
+
+
+
+
+/* 
+wallpaper=1
+
+icons=2
+
+dialogue box=3
+
+taskbar=5
+
+start menu =6 */
