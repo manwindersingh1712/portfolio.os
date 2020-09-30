@@ -9,8 +9,11 @@ var expand=document.getElementById("expand");
 var shrink=document.getElementById("shrink");
 var minimise=document.getElementById("minimise");
 var icon_start=document.getElementById("icon_start");
+var password= document.getElementById("password");
 let tasskbarcolor;
 let flag=true;
+var f1=true;
+
 
 const chromelink="https://searchencrypt.com/";
 const notepadlink="./frames/notepad.html";
@@ -26,10 +29,15 @@ let presentlink,presenticon;
 
 var openbox= function() {
 
-    document.getElementsByClassName('sm')[0].classList.remove("start_menu");
-    if(document.getElementsByClassName('d')[0]!=null){
-        document.getElementsByClassName('sm')[0].classList.remove("d");
+    if(document.getElementsByClassName("start_menu")[0]!=null){
+        document.getElementsByClassName('sm')[0].classList.remove("start_menu");
+        document.getElementsByClassName('sm')[0].classList.add("d");
     }
+    // document.getElementsByClassName('sm')[0].classList.remove("start_menu");
+    // // if(document.getElementsByClassName("start_menu")[0]!=null){
+    // //     document.getElementsByClassName('sm')[0].classList.remove("start_menu");
+    // //     document.getElementsByClassName('sm')[0].classList.add("d");
+    // // }
     
     flag=true;
     document.getElementById("d-box").classList.remove('go_up')
@@ -135,92 +143,6 @@ chrome[0].addEventListener('dblclick',function(){
     presenticon="https://img.icons8.com/doodle/22/000000/chrome.png";
     presentlink=chromelink;
 })
-
-// *********************************Start Menu***********************************************
-document.getElementById("menu_chrome").addEventListener('click',function(){
-        
-    openbox(); 
-    document.getElementById("iframe").src=chromelink;
-    document.getElementById("give_icon").src="https://img.icons8.com/doodle/22/000000/chrome.png";
- 
-    presenticon="https://img.icons8.com/doodle/22/000000/chrome.png";
-    presentlink=chromelink;
- })
-
- document.getElementById("menu_face").addEventListener('click',function(){
-    openbox();
-     
-     document.getElementById("iframe").src="./frames/face.html";
-     document.getElementById("give_icon").src="https://img.icons8.com/plasticine/22/000000/face-id.png";
- 
-     presenticon="https://img.icons8.com/plasticine/22/000000/face-id.png";
-     presentlink=facelink;
- 
- })
-
- document.getElementById("menu_project").addEventListener('click',function(){
-    openbox();
-    
-    document.getElementById("iframe").src="./frames/projects.html";
-    document.getElementById("give_icon").src="https://img.icons8.com/fluent/22/000000/group-of-projects.png";
-
-    presenticon="https://img.icons8.com/fluent/22/000000/group-of-projects.png";
-    presentlink=projectlink;
-
-})
-
-document.getElementById("menu_notepad").addEventListener('click',function(){
-    openbox();
-    document.getElementById("iframe").src="./frames/notepad.html";
-    document.getElementById("give_icon").src="https://img.icons8.com/cute-clipart/22/000000/copybook.png";
-
-    presenticon="https://img.icons8.com/cute-clipart/22/000000/copybook.png";
-    presentlink=notepadlink;
-})
-
-document.getElementById("menu_resume").addEventListener('click',function(){
-    openbox();
-    document.getElementById("iframe").src="./frames/resume.html";
-    document.getElementById("give_icon").src="https://img.icons8.com/fluent/22/000000/open-resume.png";
-
-    presenticon="https://img.icons8.com/fluent/22/000000/open-resume.png";
-    presentlink=resumelink;
-
-})
-
-document.getElementById("menu_settings").addEventListener('click',function(){
-    openbox();
-    document.getElementById("iframe").src="./frames/settings.html";
-    document.getElementById("give_icon").src="https://img.icons8.com/fluent/22/000000/settings.png";
-
-    presenticon="https://img.icons8.com/fluent/22/000000/settings.png";
-    presentlink=settingslink;
-
-})
-
-document.getElementById("menu_game").addEventListener('click',function(){
-    openbox();
-    document.getElementById("iframe").src="https://manwindersingh1712.github.io/RGB-Game/";
-    document.getElementById("give_icon").src="https://img.icons8.com/nolan/22/controller.png";
-
-    presenticon="https://img.icons8.com/nolan/22/controller.png";
-    presentlink="https://manwindersingh1712.github.io/RGB-Game/";
-
-})
-
-document.getElementById("menu_todo").addEventListener('click',function(){
-    openbox();
-    document.getElementById("iframe").src="https://manwindersingh1712.github.io/TO-DO/";
-    document.getElementById("give_icon").src="https://img.icons8.com/fluent/22/000000/todo-list.png";
-
-    presenticon="https://img.icons8.com/fluent/22/000000/todo-list.png";
-    presentlink="https://manwindersingh1712.github.io/TO-DO/";
-
-})
-
-
-
-
 
 // *********************************controlling the dialogue box***********************************************
 close.addEventListener('click',function(){
@@ -448,3 +370,242 @@ document.getElementsByClassName("start")[0].addEventListener('click',function(){
     }
       
 })
+
+// *********************************Start Menu Middle***********************************************
+document.getElementById("menu_chrome").addEventListener('click',function(){
+        
+    openbox(); 
+    document.getElementById("iframe").src=chromelink;
+    document.getElementById("give_icon").src="https://img.icons8.com/doodle/22/000000/chrome.png";
+ 
+    presenticon="https://img.icons8.com/doodle/22/000000/chrome.png";
+    presentlink=chromelink;
+ })
+
+ document.getElementById("menu_face").addEventListener('click',function(){
+    openbox();
+     
+     document.getElementById("iframe").src="./frames/face.html";
+     document.getElementById("give_icon").src="https://img.icons8.com/plasticine/22/000000/face-id.png";
+ 
+     presenticon="https://img.icons8.com/plasticine/22/000000/face-id.png";
+     presentlink=facelink;
+ 
+ })
+
+ document.getElementById("menu_project").addEventListener('click',function(){
+    openbox();
+    document.getElementById("iframe").src="./frames/projects.html";
+    document.getElementById("give_icon").src="https://img.icons8.com/fluent/22/000000/group-of-projects.png";
+
+    presenticon="https://img.icons8.com/fluent/22/000000/group-of-projects.png";
+    presentlink=projectlink;
+
+})
+
+document.getElementById("menu_notepad").addEventListener('click',function(){
+    openbox();
+    document.getElementById("iframe").src="./frames/notepad.html";
+    document.getElementById("give_icon").src="https://img.icons8.com/cute-clipart/22/000000/copybook.png";
+
+    presenticon="https://img.icons8.com/cute-clipart/22/000000/copybook.png";
+    presentlink=notepadlink;
+})
+
+document.getElementById("menu_resume").addEventListener('click',function(){
+    openbox();
+    document.getElementById("iframe").src="./frames/resume.html";
+    document.getElementById("give_icon").src="https://img.icons8.com/fluent/22/000000/open-resume.png";
+
+    presenticon="https://img.icons8.com/fluent/22/000000/open-resume.png";
+    presentlink=resumelink;
+
+})
+
+document.getElementById("menu_settings").addEventListener('click',function(){
+    openbox();
+    document.getElementById("iframe").src="./frames/settings.html";
+    document.getElementById("give_icon").src="https://img.icons8.com/fluent/22/000000/settings.png";
+
+    presenticon="https://img.icons8.com/fluent/22/000000/settings.png";
+    presentlink=settingslink;
+})
+
+document.getElementById("menu_game").addEventListener('click',function(){
+    openbox();
+    document.getElementById("iframe").src="https://manwindersingh1712.github.io/RGB-Game/";
+    document.getElementById("give_icon").src="https://img.icons8.com/nolan/22/controller.png";
+
+    presenticon="https://img.icons8.com/nolan/22/controller.png";
+    presentlink="https://manwindersingh1712.github.io/RGB-Game/";
+
+})
+
+document.getElementById("menu_todo").addEventListener('click',function(){
+    openbox();
+    document.getElementById("iframe").src="https://manwindersingh1712.github.io/TO-DO/";
+    document.getElementById("give_icon").src="https://img.icons8.com/fluent/22/000000/todo-list.png";
+
+    presenticon="https://img.icons8.com/fluent/22/000000/todo-list.png";
+    presentlink="https://manwindersingh1712.github.io/TO-DO/";
+
+})
+// *************************************End bar *********************************
+document.getElementById("end_project").addEventListener('click',function(){
+    openbox();
+    document.getElementById("iframe").src="./frames/projects.html";
+    document.getElementById("give_icon").src="https://img.icons8.com/fluent/22/000000/group-of-projects.png";
+
+    presenticon="https://img.icons8.com/fluent/22/000000/group-of-projects.png";
+    presentlink=projectlink;
+})
+
+document.getElementById("end_resume").addEventListener('click',function(){
+    openbox();
+    document.getElementById("iframe").src="./frames/resume.html";
+    document.getElementById("give_icon").src="https://img.icons8.com/fluent/22/000000/open-resume.png";
+
+    presenticon="https://img.icons8.com/fluent/22/000000/open-resume.png";
+    presentlink=resumelink;
+
+})
+
+document.getElementById("end_chrome").addEventListener('click',function(){
+        
+    openbox(); 
+    document.getElementById("iframe").src=chromelink;
+    document.getElementById("give_icon").src="https://img.icons8.com/doodle/22/000000/chrome.png";
+ 
+    presenticon="https://img.icons8.com/doodle/22/000000/chrome.png";
+    presentlink=chromelink;
+ })
+
+ document.getElementById("end_face").addEventListener('click',function(){
+    openbox();
+     
+     document.getElementById("iframe").src="./frames/face.html";
+     document.getElementById("give_icon").src="https://img.icons8.com/plasticine/22/000000/face-id.png";
+ 
+     presenticon="https://img.icons8.com/plasticine/22/000000/face-id.png";
+     presentlink=facelink;
+ 
+ })
+
+ document.getElementById("end_game").addEventListener('click',function(){
+    openbox();
+    document.getElementById("iframe").src="https://manwindersingh1712.github.io/RGB-Game/";
+    document.getElementById("give_icon").src="https://img.icons8.com/nolan/22/controller.png";
+
+    presenticon="https://img.icons8.com/nolan/22/controller.png";
+    presentlink="https://manwindersingh1712.github.io/RGB-Game/";
+
+})
+
+document.getElementById("end_notepad").addEventListener('click',function(){
+    openbox();
+    document.getElementById("iframe").src="./frames/notepad.html";
+    document.getElementById("give_icon").src="https://img.icons8.com/cute-clipart/22/000000/copybook.png";
+
+    presenticon="https://img.icons8.com/cute-clipart/22/000000/copybook.png";
+    presentlink=notepadlink;
+})
+
+
+
+
+document.getElementById("end_todo").addEventListener('click',function(){
+    openbox();
+    document.getElementById("iframe").src="https://manwindersingh1712.github.io/TO-DO/";
+    document.getElementById("give_icon").src="https://img.icons8.com/fluent/22/000000/todo-list.png";
+
+    presenticon="https://img.icons8.com/fluent/22/000000/todo-list.png";
+    presentlink="https://manwindersingh1712.github.io/TO-DO/";
+
+})
+
+document.getElementById("end_settings").addEventListener('click',function(){
+    openbox();
+    document.getElementById("iframe").src="./frames/settings.html";
+    document.getElementById("give_icon").src="https://img.icons8.com/fluent/22/000000/settings.png";
+
+    presenticon="https://img.icons8.com/fluent/22/000000/settings.png";
+    presentlink=settingslink;
+})
+
+// *************************************side bar *********************************
+
+document.getElementById("side_settings").addEventListener('click',function(){
+    openbox();
+    document.getElementById("iframe").src="./frames/settings.html";
+    document.getElementById("give_icon").src="https://img.icons8.com/fluent/22/000000/settings.png";
+
+    presenticon="https://img.icons8.com/fluent/22/000000/settings.png";
+    presentlink=settingslink;
+})
+
+document.getElementById("side_power").addEventListener('click',function(){
+    document.getElementById("blur").classList.remove("wall_up");
+    document.getElementsByClassName("power")[0].classList.remove("wall_up");
+
+    document.getElementById("blur").classList.add("wall_down");
+    document.getElementsByClassName("power")[0].classList.add("wall_down");
+    f1=true;
+    password.value="";
+    messages=[];
+    if(document.getElementsByClassName("start_menu")[0]!=null){
+        document.getElementsByClassName('sm')[0].classList.remove("start_menu");
+        document.getElementsByClassName('sm')[0].classList.add("d");
+    }
+    
+})
+
+
+
+// *************************************Background *********************************
+
+document.getElementById("background").addEventListener('click',function(){
+    if(document.getElementsByClassName("start_menu")[0]!=null){
+        document.getElementsByClassName('sm')[0].classList.remove("start_menu");
+        document.getElementsByClassName('sm')[0].classList.add("d");
+    }
+    
+})
+
+
+// *************************************Login Page*************************************
+
+document.getElementById("password").addEventListener('click',function(){
+    document.getElementById("blur").style.filter = "blur(3px)";
+})
+
+
+
+
+if(f1){
+    localStorage.setItem("login",false);
+}
+
+
+document.getElementById("btn").addEventListener('click',function(e){
+    let messages=[];
+    f1=false;
+    if(password.value == "1234"){
+        localStorage.setItem("login",true);
+        document.getElementById("blur").classList.add("wall_up");
+        document.getElementsByClassName("power")[0].classList.add("wall_up");
+        document.getElementById("blur").classList.remove("wall_down");
+        document.getElementsByClassName("power")[0].classList.remove("wall_down");
+        messages.pop();
+        document.getElementById("error").innerText=messages.join(" , ")
+    }else{
+        password.value="";
+        messages.push("Password did'nt match!!");
+    }
+
+    if(messages.length>0){
+        document.getElementById("error").innerText=messages.join(" , ");
+    }
+   
+})
+
+

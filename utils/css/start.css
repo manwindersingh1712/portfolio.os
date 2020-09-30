@@ -12,7 +12,7 @@
     display: grid;
     grid-template-columns: 1.3fr 6fr 10fr;
     /* animation: up 1s forwards; */
-    animation: d 1s forwards;
+    animation: d 0.5s forwards;
 
 }
 
@@ -36,7 +36,7 @@
     color: white;
     display: grid;
     grid-template-columns: 1.3fr 6fr 10fr;
-    animation: up 1s forwards;
+    animation: up 0.5s forwards;
 }
 
 @keyframes up{
@@ -63,6 +63,11 @@
     background-color: rgb(141, 54, 54);
     font-size: 300%;
     padding:20px;
+    cursor: default;
+}
+.end_bar i:hover{
+    border:1px solid white;
+    background-color: rgba(141, 54, 54, 0.712);
 }
 
 .social_bar{
@@ -97,6 +102,11 @@
 
 /* side bar  */
 
+#side_resume{
+    display: flex;
+    justify-content: center;
+}
+
 .side_bar{
     position: sticky;
     top:20%;
@@ -105,7 +115,7 @@
     /* border:2px solid red; */
 }
 
-.side_bar div.hover{
+.side_bar div.hover, .side_bar a{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -114,7 +124,7 @@
 
 }
 
-.side_bar div.hover:hover{
+.side_bar div.hover:hover,.side_bar a:hover{
     transition: 0.2s;
     background-color: rgba(97, 87, 87, 0.637);
 }

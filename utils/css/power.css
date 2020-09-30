@@ -1,0 +1,103 @@
+.power{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#blur{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../../images/wall3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 7;
+    filter: blur(0);
+    transition: 1s;
+}
+
+.power img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.power input{
+    width: 260px;
+    outline-width: 0;
+}
+
+.grid{
+    display: grid;
+    grid-gap: 5px;
+}
+
+.grid div{
+    display: flex;
+    justify-content: center;
+}
+
+.hint{
+    color: white;
+}
+
+.power button{
+    background-color: rgb(192, 188, 188);
+    outline-width: 0;
+
+}
+
+
+.wall_up{
+    animation:wall_up 1s forwards;
+}
+
+@keyframes wall_up{
+    from{
+        top:0;
+        left:0;
+    }
+    to{
+        top:-100%;
+    }
+}
+
+.wall_down{
+    animation:wall_down 1s forwards;
+}
+
+@keyframes wall_down{
+    from{
+        top:-100%;
+    }
+    to{
+        top:0;
+        left:0;
+    }
+}
+
+
+#error{
+    color:white;
+    font-size:13px;
+    letter-spacing:3px;
+}
+
+/* 
+wallpaper=1
+
+icons=2
+
+dialogue box=3
+
+taskbar=5
+
+start menu =6 */
