@@ -69,7 +69,6 @@ div.start i{
     position: relative;
     display: grid;
     z-index: 2;
-    cursor: pointer;
     width: max-content;
     
 }
@@ -440,3 +439,32 @@ iframe.go_up{
 }
 
 
+/* ////////////////// */
+
+#titles{
+    position: relative;
+    z-index: 2;
+    color:white;
+    font-size: 12px;
+    /* display: flex;
+    justify-content: center; */
+    width: max-content;
+    margin-left:2px;
+}
+
+#tab{
+    cursor: default;
+    position: relative;
+    z-index: 2;
+    width: max-content;
+    /* margin:10px; */
+    padding:10px;
+    border: 1px solid black;
+
+}
+
+#tab:hover{
+    border: 1px solid  rgb(173, 168, 168);
+    background-color: rgba(97, 87, 87, 0.637);
+
+}

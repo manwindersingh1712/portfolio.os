@@ -31,8 +31,17 @@
 }
 
 .power input{
+    background-color: rgb(224, 217, 217);
+
     width: 260px;
     outline-width: 0;
+    letter-spacing: 2px;
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    padding-left: 10px;
+}
+.power input:focus{
+    background-color: white;
 }
 
 .grid{
@@ -46,13 +55,20 @@
 }
 
 .hint{
-    color: white;
+    color: rgb(217, 223, 235);
 }
 
 .power button{
-    background-color: rgb(192, 188, 188);
+    border: 5px solid rgb(0, 0, 0);
+    background-color: rgb(224, 217, 217);
     outline-width: 0;
+    width: 80px;
+    border-radius: 10px;
+}
 
+.power button:hover{
+    background-color: black;
+    color: white;
 }
 
 
@@ -66,7 +82,7 @@
         left:0;
     }
     to{
-        top:-100%;
+        top:-500%;
     }
 }
 
@@ -76,7 +92,7 @@
 
 @keyframes wall_down{
     from{
-        top:-100%;
+        top:-500%;
     }
     to{
         top:0;
