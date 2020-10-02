@@ -552,6 +552,9 @@ document.getElementById("side_power").addEventListener('click',function(){
     f1=true;
     password.value="";
     messages=[];
+    document.getElementById("blank").style.zIndex=7;
+    
+
     if(document.getElementsByClassName("start_menu")[0]!=null){
         document.getElementsByClassName('sm')[0].classList.remove("start_menu");
         document.getElementsByClassName('sm')[0].classList.add("d");
@@ -597,6 +600,7 @@ document.getElementById("btn").addEventListener('click',function(e){
         document.getElementsByClassName("power")[0].classList.remove("wall_down");
         messages.pop();
         document.getElementById("error").innerText=messages.join(" , ")
+        document.getElementById("blank").style.zIndex=0;
     }else{
         password.value="";
         messages.push("Password did'nt match!!");
