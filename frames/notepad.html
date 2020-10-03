@@ -1,28 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../utils/css/notepad/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../utils/css/notepad/main.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="wrapper">
-        <div>
-            <h5>NOTEPAD</h5>
-        </div>
-        
-        <div>
-            <textarea id="note" name="notes" id="textarea" cols="30" rows="10" placeholder="Enter your notes here..............."></textarea>
-        </div>
+      <div>
+        <h5>NOTEPAD</h5>
+      </div>
 
-        <div>
-            <button class="save" onclick="copy()"> SAVE</button>
-            <button onclick="new_note()" class="new"> NEW</button>
-        </div>
+      <div>
+        <textarea
+          id="note"
+          name="notes"
+          id="textarea"
+          cols="30"
+          rows="10"
+          placeholder="Enter your notes here..............."
+        ></textarea>
+      </div>
 
+      <div>
+        <button class="save" onclick="copy()">SAVE</button>
+        <button onclick="new_note()" class="new">NEW</button>
+      </div>
     </div>
-    
-<script type="text/javascript" src="../utils/js/notepad/save.js"></script>
-</body>
+
+    <script type="text/javascript" src="../utils/js/notepad/save.js"></script>
+  </body>
 </html>
