@@ -1,0 +1,56 @@
+body {
+  background-color: rgb(44, 43, 43);
+  overflow-x: hidden;
+  height: max-content;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* <!-- ***************************Camera*********************************  --> */
+#pic {
+  width: 1000px;
+  height: 600px;
+  color: black;
+  background-color: rgb(207, 203, 203);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* <!-- ***************************Camera*********************************  --> */
+#camera {
+  width: max-content;
+  height: max-content;
+}
+
+/* <!-- ***************************Heading*********************************  --> */
+
+h1 {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+div.head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* <!-- ***************************Button*********************************  --> */
+
+button {
+  background-color: black;
+  outline-width: 0;
+  color: white;
+  font-size: 20px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}

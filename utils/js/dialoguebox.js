@@ -5,6 +5,7 @@ var project = document.getElementsByClassName("project");
 var resume = document.getElementsByClassName("resume");
 var face_recognition = document.getElementsByClassName("face_recognition");
 var settings = document.getElementsByClassName("settings");
+var folder = document.getElementsByClassName("folder");
 var expand = document.getElementById("expand");
 var shrink = document.getElementById("shrink");
 var minimise = document.getElementById("minimise");
@@ -20,6 +21,7 @@ const projectlink = "./frames/projects.html";
 const resumelink = "./frames/resume.html";
 const settingslink = "./frames/settings.html";
 const facelink = "./frames/face.html";
+const folderlink = "./frames/folder.html";
 
 let presentlink, presenticon;
 
@@ -73,6 +75,16 @@ var openbox = function () {
     "4px solid rgb(196, 74, 74)";
 };
 // *************************************desktop icons*******************************************************
+
+folder[0].addEventListener("dblclick", function () {
+  openbox();
+  document.getElementById("iframe").src = "./frames/folder.html";
+  document.getElementById("give_icon").src =
+    "https://img.icons8.com/fluent/22/000000/folder-invoices.png";
+
+  presenticon = "https://img.icons8.com/fluent/22/000000/folder-invoices.png";
+  presentlink = folderlink;
+});
 
 settings[0].addEventListener("dblclick", function () {
   openbox();
@@ -441,6 +453,17 @@ document.getElementById("menu_todo").addEventListener("click", function () {
   presentlink = "https://manwindersingh1712.github.io/TO-DO/";
 });
 // *************************************End bar *********************************
+
+document.getElementById("end_webcam").addEventListener("click", function () {
+  openbox();
+  document.getElementById("iframe").src = "./frames/camera.html";
+  document.getElementById("give_icon").src =
+    "https://img.icons8.com/nolan/22/camera.png";
+
+  presenticon = "https://img.icons8.com/nolan/22/camera.png";
+  presentlink = "./frames/camera.html";
+});
+
 document.getElementById("end_project").addEventListener("click", function () {
   openbox();
   document.getElementById("iframe").src = "./frames/projects.html";
@@ -525,6 +548,25 @@ document.getElementById("end_settings").addEventListener("click", function () {
 });
 
 // *************************************side bar *********************************
+document.getElementById("side_folder").addEventListener("click", function () {
+  openbox();
+  document.getElementById("iframe").src = "./frames/folder.html";
+  document.getElementById("give_icon").src =
+    "https://img.icons8.com/fluent/22/000000/folder-invoices.png";
+
+  presenticon = "https://img.icons8.com/fluent/22/000000/folder-invoices.png";
+  presentlink = folderlink;
+});
+
+document.getElementById("side_settings").addEventListener("click", function () {
+  openbox();
+  document.getElementById("iframe").src = "./frames/settings.html";
+  document.getElementById("give_icon").src =
+    "https://img.icons8.com/fluent/22/000000/settings.png";
+
+  presenticon = "https://img.icons8.com/fluent/22/000000/settings.png";
+  presentlink = settingslink;
+});
 
 document.getElementById("side_settings").addEventListener("click", function () {
   openbox();
