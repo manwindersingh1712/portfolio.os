@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(24, 23, 23, 0.849);
+}
+
+i {
+  color: rgb(240, 180, 17);
+  font-size: 44px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.folder_grid {
+  display: grid;
+  margin: 62px;
+  padding: 20px;
+}
+
+.flex p {
+  color: rgba(228, 224, 224, 0.945);
+}
+
+.folder_grid:hover {
+  outline: 1px solid rgb(196, 195, 195);
+  background-color: rgba(133, 127, 127, 0.486);
+}
