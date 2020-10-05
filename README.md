@@ -11,7 +11,7 @@ This link to my portfolio.os is :-https://manwindersingh1712.github.io/portfolio
 Few snapshots of this are been uploaded here below , there are many more features in it rather than just the snaps as given.<br/>
 Do try using all the features.<br/>
 
-![]('images/capture1.png')
-![]('images/capture2.png')
-![]('images/capture3.png')
-![]('images/capture4.png')
+![](images/capture1.png)
+![](images/capture2.png)
+![](images/capture3.png)
+![](images/capture4.png)
