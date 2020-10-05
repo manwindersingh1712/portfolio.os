@@ -370,6 +370,17 @@ document
   });
 
 // *********************************Start Menu Middle***********************************************
+
+document.getElementById("middle_webcam").addEventListener("click", function () {
+  openbox();
+  document.getElementById("iframe").src = "./frames/camera.html";
+  document.getElementById("give_icon").src =
+    "https://img.icons8.com/nolan/22/camera.png";
+
+  presenticon = "https://img.icons8.com/nolan/22/camera.png";
+  presentlink = "./frames/camera.html";
+});
+
 document.getElementById("menu_chrome").addEventListener("click", function () {
   openbox();
   document.getElementById("iframe").src = chromelink;
@@ -626,6 +637,7 @@ document.getElementById("btn").addEventListener("click", function (e) {
     messages.pop();
     document.getElementById("error").innerText = messages.join(" , ");
     document.getElementById("blank").style.zIndex = 0;
+    document.getElementById("blur").style.filter = "blur(0)";
   } else {
     password.value = "";
     messages.push("Password did'nt match!!");
