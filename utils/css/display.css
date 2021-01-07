@@ -20,7 +20,7 @@
   height: 30px;
   background-color: rgb(36, 33, 33);
   position: fixed;
-  z-index: 5; /*///////////////////////////////////////////////////////////////////////*/
+  z-index: 5;
   bottom: 0;
   display: flex;
   justify-items: center;
