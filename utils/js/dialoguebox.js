@@ -626,6 +626,7 @@ if (f1) {
 }
 
 document.getElementById("btn").addEventListener("click", function (e) {
+  e.preventDefault();
   let messages = [];
   f1 = false;
   if (password.value == "1234") {
