@@ -11,6 +11,7 @@ var shrink = document.getElementById("shrink");
 var minimise = document.getElementById("minimise");
 var icon_start = document.getElementById("icon_start");
 var password = document.getElementById("password");
+var d_box = document.getElementById("d-box");
 let tasskbarcolor;
 let flag = true;
 var f1 = true;
@@ -39,7 +40,7 @@ var openbox = function () {
   // // }
 
   flag = true;
-  document.getElementById("d-box").classList.remove("go_up");
+  d_box.classList.remove("go_up");
   document.getElementById("top").classList.remove("go_up");
   document.getElementById("close").classList.remove("go_up");
   document.getElementById("expand").classList.remove("go_up");
@@ -47,7 +48,7 @@ var openbox = function () {
   document.getElementById("minimise").classList.remove("go_up");
   document.getElementById("iframe").classList.remove("go_up");
 
-  document.getElementById("d-box").classList.remove("go_down");
+  d_box.classList.remove("go_down");
   document.getElementById("top").classList.remove("go_down");
   document.getElementById("close").classList.remove("go_down");
   document.getElementById("expand").classList.remove("go_down");
@@ -55,11 +56,11 @@ var openbox = function () {
   document.getElementById("minimise").classList.remove("go_down");
   document.getElementById("iframe").classList.remove("go_down");
 
-  document.getElementById("d-box").classList.remove("active-large");
+  d_box.classList.remove("active-large");
   document.getElementById("top").classList.remove("active-large");
   document.getElementById("iframe").classList.remove("active-large");
 
-  document.getElementById("d-box").classList.add("active-small");
+  d_box.classList.add("active-small");
   document.getElementById("top").classList.add("active-small");
   document.getElementById("iframe").classList.add("active-small");
 
@@ -154,7 +155,7 @@ close.addEventListener("click", function () {
   flag = true;
 
   document.getElementById("iframe").classList.remove("go_down");
-  document.getElementById("d-box").classList.remove("go_down");
+  d_box.classList.remove("go_down");
   document.getElementById("top").classList.remove("go_down");
   document.getElementById("close").classList.remove("go_down");
   document.getElementById("expand").classList.remove("go_down");
@@ -162,17 +163,17 @@ close.addEventListener("click", function () {
   document.getElementById("minimise").classList.remove("go_down");
 
   document.getElementById("iframe").classList.remove("go_up");
-  document.getElementById("d-box").classList.remove("go_up");
+  d_box.classList.remove("go_up");
   document.getElementById("top").classList.remove("go_up");
   document.getElementById("close").classList.remove("go_up");
   document.getElementById("expand").classList.remove("go_up");
   document.getElementById("shrink").classList.remove("go_up");
   document.getElementById("minimise").classList.remove("go_up");
 
-  document.getElementById("d-box").classList.remove("active-small");
+  d_box.classList.remove("active-small");
   document.getElementById("top").classList.remove("active-small");
   document.getElementById("iframe").classList.remove("active-small");
-  document.getElementById("d-box").classList.remove("active-large");
+  d_box.classList.remove("active-large");
   document.getElementById("top").classList.remove("active-large");
   document.getElementById("iframe").classList.remove("active-large");
 
@@ -192,14 +193,14 @@ expand.addEventListener("click", function () {
   flag = true;
 
   document.getElementById("iframe").classList.remove("go_down");
-  document.getElementById("d-box").classList.remove("go_down");
+  d_box.classList.remove("go_down");
   document.getElementById("top").classList.remove("go_down");
   document.getElementById("close").classList.remove("go_down");
   document.getElementById("expand").classList.remove("go_down");
   document.getElementById("shrink").classList.remove("go_down");
   document.getElementById("minimise").classList.remove("go_down");
 
-  document.getElementById("d-box").classList.remove("go_up");
+  d_box.classList.remove("go_up");
   document.getElementById("top").classList.remove("go_up");
   document.getElementById("close").classList.remove("go_up");
   document.getElementById("expand").classList.remove("go_up");
@@ -207,10 +208,10 @@ expand.addEventListener("click", function () {
   document.getElementById("minimise").classList.remove("go_up");
   document.getElementById("iframe").classList.remove("go_up");
 
-  document.getElementById("d-box").classList.add("active-large");
+  d_box.classList.add("active-large");
   document.getElementById("top").classList.add("active-large");
   document.getElementById("iframe").classList.add("active-large");
-  document.getElementById("d-box").classList.remove("active-small");
+  d_box.classList.remove("active-small");
   document.getElementById("top").classList.remove("active-small");
   document.getElementById("iframe").classList.remove("active-small");
   document.getElementById("expand").style.visibility = "hidden";
@@ -220,14 +221,14 @@ expand.addEventListener("click", function () {
 
 shrink.addEventListener("click", function () {
   document.getElementById("iframe").classList.remove("go_down");
-  document.getElementById("d-box").classList.remove("go_down");
+  d_box.classList.remove("go_down");
   document.getElementById("top").classList.remove("go_down");
   document.getElementById("close").classList.remove("go_down");
   document.getElementById("expand").classList.remove("go_down");
   document.getElementById("shrink").classList.remove("go_down");
   document.getElementById("minimise").classList.remove("go_down");
 
-  document.getElementById("d-box").classList.remove("go_up");
+  d_box.classList.remove("go_up");
   document.getElementById("top").classList.remove("go_up");
   document.getElementById("close").classList.remove("go_up");
   document.getElementById("expand").classList.remove("go_up");
@@ -237,10 +238,10 @@ shrink.addEventListener("click", function () {
 
   document.getElementById("expand").style.visibility = "visible";
   document.getElementById("shrink").style.visibility = "hidden";
-  document.getElementById("d-box").classList.add("active-small");
+  d_box.classList.add("active-small");
   document.getElementById("top").classList.add("active-small");
   document.getElementById("iframe").classList.add("active-small");
-  document.getElementById("d-box").classList.remove("active-large");
+  d_box.classList.remove("active-large");
   document.getElementById("top").classList.remove("active-large");
   document.getElementById("iframe").classList.remove("active-large");
   // document.getElementById("iframe").src=presentlink;
@@ -250,14 +251,14 @@ minimise.addEventListener("click", function () {
   flag = false;
 
   document.getElementById("iframe").classList.remove("go_up");
-  document.getElementById("d-box").classList.remove("go_up");
+  d_box.classList.remove("go_up");
   document.getElementById("top").classList.remove("go_up");
   document.getElementById("close").classList.remove("go_up");
   document.getElementById("expand").classList.remove("go_up");
   document.getElementById("shrink").classList.remove("go_up");
   document.getElementById("minimise").classList.remove("go_up");
   document.getElementById("iframe").classList.add("go_down");
-  document.getElementById("d-box").classList.add("go_down");
+  d_box.classList.add("go_down");
   document.getElementById("top").classList.add("go_down");
   document.getElementById("close").classList.add("go_down");
   document.getElementById("expand").classList.add("go_down");
@@ -284,37 +285,37 @@ icon_start.addEventListener("click", function () {
   document.getElementById("shrink").style.visibility = "hidden";
 
   // if(document.getElementsByClassName('go_down')!==null && document.getElementsByClassName('active-large')!==null){
-  // document.getElementById("d-box").classList.remove('active-large')
+  // d_box.classList.remove('active-large')
   // document.getElementById("top").classList.remove('active-large')
   // document.getElementById("iframe").classList.remove('active-large')
-  // document.getElementById("d-box").classList.add('active-small')
+  // d_box.classList.add('active-small')
   // document.getElementById("top").classList.add('active-small')
   // document.getElementById("iframe").classList.add('active-small')
   // alert('in 1')
   // }else if(document.getElementsByClassName('active-large')!==null){
   //     alert('in2')
   // }else{
-  //     document.getElementById("d-box").classList.remove('active-large')
+  //     d_box.classList.remove('active-large')
   //     document.getElementById("top").classList.remove('active-large')
   //     document.getElementById("iframe").classList.remove('active-large')
-  //     document.getElementById("d-box").classList.add('active-small')
+  //     d_box.classList.add('active-small')
   //     document.getElementById("top").classList.add('active-small')
   //     document.getElementById("iframe").classList.add('active-small')
   //     alert('in3')
 
   // }
 
-  document.getElementById("d-box").classList.remove("active-large");
+  d_box.classList.remove("active-large");
   document.getElementById("top").classList.remove("active-large");
   document.getElementById("iframe").classList.remove("active-large");
-  document.getElementById("d-box").classList.add("active-small");
+  d_box.classList.add("active-small");
   document.getElementById("top").classList.add("active-small");
   document.getElementById("iframe").classList.add("active-small");
 
   // document.getElementById("iframe").classList.remove('active-small')
 
   if (flag) {
-    document.getElementById("d-box").classList.toggle("go_down");
+    d_box.classList.toggle("go_down");
     document.getElementById("top").classList.toggle("go_down");
     document.getElementById("close").classList.toggle("go_down");
     document.getElementById("expand").classList.toggle("go_down");
@@ -322,7 +323,7 @@ icon_start.addEventListener("click", function () {
     document.getElementById("minimise").classList.toggle("go_down");
     document.getElementById("iframe").classList.toggle("go_down");
   } else {
-    document.getElementById("d-box").classList.toggle("go_up");
+    d_box.classList.toggle("go_up");
     document.getElementById("top").classList.toggle("go_up");
     document.getElementById("close").classList.toggle("go_up");
     document.getElementById("expand").classList.toggle("go_up");
@@ -330,7 +331,7 @@ icon_start.addEventListener("click", function () {
     document.getElementById("minimise").classList.toggle("go_up");
     document.getElementById("iframe").classList.toggle("go_up");
 
-    document.getElementById("d-box").classList.toggle("go_down");
+    d_box.classList.toggle("go_down");
     document.getElementById("top").classList.toggle("go_down");
     document.getElementById("close").classList.toggle("go_down");
     document.getElementById("expand").classList.toggle("go_down");
